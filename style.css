@@ -201,3 +201,28 @@ h2{
 @media (max-width: 820px){
   .cards{ grid-template-columns: 1fr; }
 }
+/* Better vertical spacing */
+section {
+  margin-top: 80px;
+}
+
+.hero {
+  margin-bottom: 60px;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+
+.panel {
+  margin-top: 40px;
+  padding: 28px;
+}
+
+.cards {
+  margin-top: 24px;
+}
+
+.footer {
+  margin-top: 80px;
+}
