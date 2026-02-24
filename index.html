@@ -1,12 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Volhkan Commission Site</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>waugh3d</title>
+  <meta name="description" content="waugh3d — 3D character art & commissions." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Hello World</h1>
-  <p>This is my site.</p>
+  <div class="bg"></div>
+  <div class="grid"></div>
+
+  <main class="wrap">
+    <header class="hero">
+      <div class="tag">waugh3d</div>
+      <h1>High-end 3D character art</h1>
+      <p class="sub">
+        Stylized realism, game-ready vibes, and premium presentation.
+        Commissions opening soon.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="#commissions">Commissions</a>
+        <a class="btn ghost" href="#work">Work</a>
+      </div>
+
+      <div class="pillrow">
+        <span class="pill">Blender</span>
+        <span class="pill">3D Print Ready</span>
+        <span class="pill">Character Design</span>
+      </div>
+    </header>
+
+    <section id="work" class="panel">
+      <h2>Work</h2>
+      <p class="muted">
+        This section is a placeholder. Next we can add a gallery grid, a “featured character,” and a clean
+        navigation bar.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Characters</h3>
+          <p>Portfolio gallery, close-ups, turntables, and behind-the-scenes.</p>
+        </article>
+        <article class="card">
+          <h3>Prints</h3>
+          <p>High-detail sculpts, resin print prep, and finishing pipeline.</p>
+        </article>
+        <article class="card">
+          <h3>Process</h3>
+          <p>Clear steps: brief → concept → sculpt → final renders.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="commissions" class="panel">
+      <div class="row">
+        <h2>Commissions</h2>
+        <span class="badge badge--soon">SOON</span>
+      </div>
+
+      <p class="muted">
+        We’ll plug in your queue/status system here after the landing page looks right.
+      </p>
+
+      <div class="cta">
+        <a class="btn primary" href="mailto:youremail@example.com">Email me</a>
+        <a class="btn ghost" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'}); return false;">Back to top</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> waugh3d</span>
+      <span class="muted">Built on Cloudflare Pages</span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
