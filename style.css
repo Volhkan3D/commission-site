@@ -235,3 +235,38 @@ h1{
 .card p{
   line-height: 1.55;
 }
+/* --- Spacing + readability fixes --- */
+.hero{
+  padding: 42px 18px 28px;
+}
+
+.panel{
+  margin-top: 38px !important;   /* was 18px */
+  padding: 28px !important;      /* more breathing room */
+}
+
+.wrap{
+  padding-top: 44px !important;
+}
+
+h1{
+  margin-bottom: 14px !important;
+}
+
+.sub, .muted, p{
+  line-height: 1.6;
+}
+
+.pillrow{
+  margin-top: 22px !important;
+  gap: 10px !important;
+}
+
+.cards{
+  gap: 16px !important;
+  margin-top: 18px !important;
+}
+
+.card p{
+  line-height: 1.55;
+}
